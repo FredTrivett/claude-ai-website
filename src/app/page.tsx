@@ -3,41 +3,41 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <section className="grid grid-cols-2 gap-4 px-44 items-center h-screen">
-        <div className="flex flex-col gap-4">
+      <section className="grid grid-cols-12 gap-4 px-20 items-center h-screen">
+        <div className="flex flex-col gap-4 col-start-2 col-span-5">
           <h1 className="text-6xl font-[600] line-height-[110%] font-copernicus">Meet Claude</h1>
-          <p className="text-2xl font-normal line-height-[140%] leading-[0.1em]">Claude is AI for all of us. Whether you're brainstorming alone or building with a team of thousands, Claude is here to help.</p>
+          <p className="text-lg -mt-2 font-medium font-tyrene line-height-[140%]">Claude is AI for all of us. Whether you're brainstorming alone or building with a team of thousands, Claude is here to help.</p>
           <div className="flex gap-4 mt-2">
-            <button className="bg-black text-white px-8 py-4 rounded-xl text-lg">Try Claude</button>
-            <button className="text-black px-4 py-2 rounded-xl border border-black text-lg">Get api access</button>
+            <button className="bg-black text-white font-serene px-8 py-4 rounded-xl text-sm font-serene-medium">Try Claude</button>
+            <button className="text-black font-serene px-8 py-4 rounded-xl border border-black text-sm font-serene-medium">Get api access</button>
           </div>
         </div>
-        <div className="h-full">
+        <div className="h-full col-start-7 col-span-6 m-12">
           <Image className="w-full h-full object-contain" src="/meet-claude.gif" alt="Claude hero" width={700} height={700} />
         </div>
       </section>
-      <section>
-        <h2>Claude’s capabilities</h2>
-        <ul className="grid grid-cols-4 gap-4">
-          <li className="flex flex-col items-center gap-4">
-            <Image src="/advanced-reasoning.webp" alt="Advanced reasoning" width={100} height={100} />
-            <h3>Advanced reasoning</h3>
-            <p className="text-center">Claude can perform complex cognitive tasks that go beyond simple pattern recognition or text generation</p>
+      <section className="px-20 flex flex-col gap-8 justify-center items-center">
+        <h2 className="text-[2.5rem] font-serene font-serene-black">Claude’s capabilities</h2>
+        <ul className="grid grid-cols-12 gap-8">
+          <li className="flex flex-col items-center px-6 gap-4 col-span-3">
+            <Image src="/advanced-reasoning.webp" alt="Advanced reasoning" width={160} height={160} />
+            <h3 className="text-[1.3rem] font-serene font-serene-black text-center">Advanced reasoning</h3>
+            <p className="text-center font-copernicus font-copernicus-light text-[0.9rem] ">Claude can perform complex cognitive tasks that go beyond simple pattern recognition or text generation</p>
           </li>
-          <li className="flex flex-col items-center gap-4">
-            <Image src="/vision-analysis.webp" alt="Vision analysis" width={100} height={100} />
-            <h3>Vision analysis</h3>
-            <p className="text-center">Transcribe and analyze almost any static image, from handwritten notes and graphs, to photographs</p>
+          <li className="flex flex-col items-center px-6 gap-4 col-span-3">
+            <Image src="/vision-analysis.webp" alt="Vision analysis" width={160} height={160} />
+            <h3 className="text-[1.3rem] font-serene font-serene-black text-center">Vision analysis</h3>
+            <p className="text-center font-copernicus font-copernicus-light text-[0.9rem]">Transcribe and analyze almost any static image, from handwritten notes and graphs, to photographs</p>
           </li>
-          <li className="flex flex-col items-center gap-4">
-            <Image src="/code-generation.webp" alt="Code generation" width={100} height={100} />
-            <h3>Code generation</h3>
-            <p className="text-center">Start creating websites in HTML and CSS, turning images into structured JSON data, or debugging complex code bases</p>
+          <li className="flex flex-col items-center px-6 gap-4 col-span-3">
+            <Image src="/code-generation.webp" alt="Code generation" width={160} height={160} />
+            <h3 className="text-[1.3rem] font-serene font-serene-black text-center">Code generation</h3>
+            <p className="text-center font-copernicus font-copernicus-light text-[0.9rem]">Start creating websites in HTML and CSS, turning images into structured JSON data, or debugging complex code bases</p>
           </li>
-          <li className="flex flex-col items-center gap-4">
-            <Image src="/multilingual-processing.webp" alt="Multilingual processing" width={100} height={100} />
-            <h3>Multilingual processing</h3>
-            <p className="text-center">Translate between various languages in real-time, practice grammar, or create multi-lingual content</p>
+          <li className="flex flex-col items-center px-6 gap-4 col-span-3">
+            <Image src="/multilingual-processing.webp" alt="Multilingual processing" width={160} height={160} />
+            <h3 className="text-[1.3rem] font-serene font-serene-black text-center">Multilingual processing</h3>
+            <p className="text-center font-copernicus font-copernicus-light text-[0.9rem]">Translate between various languages in real-time, practice grammar, or create multi-lingual content</p>
           </li>
         </ul>
       </section>

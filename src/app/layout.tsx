@@ -1,4 +1,4 @@
-import { copernicus } from './fonts'
+import { copernicus, serene, tyrene } from './fonts'
 import './globals.css'
 
 export default function RootLayout({
@@ -7,8 +7,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${copernicus.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${copernicus.variable} ${serene.variable} ${tyrene.variable}`}>
+      <body className="bg-[#FAFAF8]">{children}</body>
     </html>
   )
 }
