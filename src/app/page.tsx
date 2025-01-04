@@ -6,6 +6,8 @@ import CapabilityCard from "@/components/CapabilityCard";
 import { motion } from "motion/react";
 import { useRef } from "react";
 import { useInView } from "motion/react";
+import Footer from "@/components/Footer";
+import CompanyNews from "@/components/CompanyNews";
 
 export default function Home() {
   const capabilitiesRef = useRef(null);
@@ -309,6 +311,8 @@ export default function Home() {
         </div>
       </section>
 
+      <CompanyNews />
+      <Footer />
     </>
   );
 }
