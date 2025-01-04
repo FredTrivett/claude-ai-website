@@ -3,46 +3,69 @@ import localFont from 'next/font/local'
 export const copernicus = localFont({
     src: [
         {
-            path: './CopernicusNewCondTrial-070-BF6616044f8a3ab.otf',
+            path: './copernicus-light.woff2',
             weight: '300',
             style: 'normal',
         },
         {
-            path: './CopernicusNewCondTrial-090-BF6616044f92f03.otf',
-            weight: '400',
-            style: 'normal',
-        },
-        {
-            path: './CopernicusNewCondTrial-110-BF6616045000e13.otf',
+            path: './CopernicusTrial-Medium-BF66160450d988d.ttf',
             weight: '500',
             style: 'normal',
         },
         {
-            path: './CopernicusNewCondTrial-130-BF661604501d32e.otf',
+            path: './CopernicusTrial-MediumItalic-BF6616045177c71.ttf',
+            weight: '500',
+            style: 'italic',
+        },
+        {
+            path: './CopernicusTrial-Semibold-BF66160451692c7.ttf',
             weight: '600',
             style: 'normal',
         },
         {
-            path: './CopernicusTrial-Extrabold-BF661604510c584.ttf',
-            weight: '800',
-            style: 'normal',
+            path: './CopernicusTrial-SemiboldItalic-BF661604516314e.ttf',
+            weight: '600',
+            style: 'italic',
         },
         {
             path: './CopernicusTrial-Heavy-BF6616045153731.ttf',
-            weight: '900',
+            weight: '800',
             style: 'normal',
         },
         {
-            path: './CopernicusTrial-BoldItalic-BF6616045093ed8.ttf',
-            weight: '700',
-            style: 'italic',
-        },
-        {
-            path: './CopernicusTrial-ExtraboldItalic-BF66160450eba9a.ttf',
+            path: './CopernicusTrial-HeavyItalic-BF66160450d4830.ttf',
             weight: '800',
             style: 'italic',
-        }
+        },
     ],
     variable: '--font-copernicus',
+    display: 'swap',
+})
+
+export const serene = localFont({
+    src: [
+        {
+            path: './serene-medium.woff2',
+            weight: '500',
+            style: 'normal',
+        },
+        {
+            path: './serene-bold.woff2',
+            weight: '700',
+            style: 'normal',
+        },
+        {
+            path: './serene-black.woff2',
+            weight: '900',
+            style: 'normal',
+        }
+    ],
+    variable: '--font-serene',
+    display: 'swap',
+})
+
+export const tyrene = localFont({
+    src: './tyrene.woff2',
+    variable: '--font-tyrene',
     display: 'swap',
 }) 
