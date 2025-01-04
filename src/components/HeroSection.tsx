@@ -39,7 +39,7 @@ export default function HeroSection() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
                 >
-                    Claude is AI for all of us. Whether you're brainstorming alone or building with a team of thousands, Claude is here to help.
+                    Claude is AI for all of us. Whether you&apos;re brainstorming alone or building with a team of thousands, Claude is here to help.
                 </motion.p>
 
                 <div className="flex flex-col md:flex-row gap-4 mt-2">

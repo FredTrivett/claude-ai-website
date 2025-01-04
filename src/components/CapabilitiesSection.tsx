@@ -18,7 +18,7 @@ export default function CapabilitiesSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
-                Claude's capabilities
+                Claude&apos;s capabilities
             </motion.h2>
             <ul className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full">
                 <motion.li
